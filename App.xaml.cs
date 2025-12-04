@@ -11,7 +11,10 @@ namespace MauiAppJogoDaVelha
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new AppShell());
+            var janela = new Window(new AppShell());
+            janela.Width = 400;
+            janela.Height = 650;
+            return janela;
         }
     }
 }
